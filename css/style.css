@@ -5,27 +5,27 @@
 :root {
 
     /* Brand Colors */
-    --primary: #7C3AED;
-    --primary-light: #8B5CF6;
-    --accent: #38BDF8;
+    --primary: #78EFC7;
+    --primary-light: #8AF3D2;
+    --primary-dark: #70EAC0;
 
     /* Background Colors */
-    --background: #111827;
-    --background-dark: #0F172A;
-    --surface: #1F2937;
-    --surface-light: #374151;
+    --background: #2A3338;
+    --background-dark: #1F292D;
+    --surface: #2B373B;
+    --surface-light: #344348;
 
     /* Text Colors */
-    --text: #FFFFFF;
-    --text-secondary: #D1D5DB;
-    --text-muted: #9CA3AF;
+    --text: #F6F5F6;
+    --text-secondary: #D5DEDC;
+    --text-muted: #9EAAA7;
 
     /* Borders */
-    --border: #374151;
+    --border: #435157;
 
     /* Shadows */
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
-    --glow: 0 0 20px rgba(124, 58, 237, 0.35);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --glow: 0 0 20px rgba(120, 239, 199, 0.25);
 
     /* Border Radius */
     --radius-sm: 8px;
@@ -143,10 +143,10 @@ a:hover {
     padding: 14px 28px;
 
     background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--accent)
-    );
+    135deg,
+    var(--primary),
+    var(--primary-dark)
+);
 
     color: white;
 
@@ -165,7 +165,7 @@ a:hover {
 
     transform: translateY(-3px);
 
-    box-shadow: 0 0 30px rgba(124, 58, 237, .5);
+    box-shadow: 0 0 30px rgba(120, 239, 199, 0.4);
 
 }
 
@@ -211,7 +211,7 @@ section {
 
 .card {
 
-    background: rgba(31, 41, 55, .75);
+    background: rgba(43, 55, 59, 0.85);
 
     border: 1px solid var(--border);
 
@@ -275,7 +275,7 @@ header {
 
     backdrop-filter: blur(15px);
 
-    background: rgba(17, 24, 39, .85);
+    background: rgba(31, 41, 45, 0.88);
 
     border-bottom: 1px solid var(--border);
 
@@ -458,11 +458,11 @@ header {
     border-radius: 50%;
 
     background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--accent)
-    );
-
+    135deg,
+    var(--primary),
+    var(--primary-dark)
+);
+   
 }
 
 .thumbnail {
