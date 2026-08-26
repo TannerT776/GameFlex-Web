@@ -5,9 +5,11 @@
 :root {
 
     /* Brand Colors */
-    --primary: #78EFC7;
-    --primary-light: #8AF3D2;
-    --primary-dark: #70EAC0;
+    /* Brand Colors */
+
+    --primary: #4FB89B;
+    --primary-light: #5FC7AA;
+    --primary-dark: #3E9F86;
 
     /* Background Colors */
     --background: #2A3338;
@@ -25,7 +27,7 @@
 
     /* Shadows */
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    --glow: 0 0 20px rgba(120, 239, 199, 0.25);
+    --glow: 0 0 18px rgba(79, 184, 155, 0.18);
 
     /* Border Radius */
     --radius-sm: 8px;
@@ -143,9 +145,9 @@ a:hover {
     padding: 14px 28px;
 
     background: linear-gradient(
-    135deg,
-    var(--primary),
-    var(--primary-dark)
+    transform: translateY(-3px);
+
+       box-shadow: 0 0 22px rgba(79, 184, 155, 0.28);
 );
 
     color: white;
