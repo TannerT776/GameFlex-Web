@@ -266,7 +266,6 @@ table {
 /* ===========================
    Navigation
    =========================== */
-
 header {
 
     position: sticky;
@@ -277,7 +276,7 @@ header {
 
     backdrop-filter: blur(15px);
 
-    background: rgba(31, 41, 45, 0.88);
+    background: rgba(42, 51, 56, 0.96);
 
     border-bottom: 1px solid var(--border);
 
@@ -287,7 +286,7 @@ header {
 
     width: min(90%, var(--max-width));
 
-    height: 80px;
+    height: 100px;
 
     margin: auto;
 
@@ -300,19 +299,31 @@ header {
 }
 
 .logo {
+
     display: flex;
+
     align-items: center;
+
 }
 
 .logo img {
-    width: 150px;
-    height: auto;
+
+    width: 95px;
+
+    height: 95px;
+
+    object-fit: contain;
+
     display: block;
+
     transition: var(--transition);
+
 }
 
 .logo:hover img {
+
     transform: scale(1.03);
+
 }
 
 .nav-links {
@@ -374,6 +385,7 @@ header {
     width: 100%;
 
 }
+
 
 
 /* ===========================
