@@ -145,10 +145,10 @@ a:hover {
     padding: 14px 28px;
 
     background: linear-gradient(
-    transform: translateY(-3px);
-
-       box-shadow: 0 0 22px rgba(79, 184, 155, 0.28);
-);
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
 
     color: white;
 
@@ -167,29 +167,7 @@ a:hover {
 
     transform: translateY(-3px);
 
-    box-shadow: 0 0 30px rgba(120, 239, 199, 0.4);
-
-}
-
-.secondary-btn {
-
-    display: inline-block;
-
-    padding: 14px 28px;
-
-    border: 2px solid var(--primary);
-
-    border-radius: var(--radius-md);
-
-    font-weight: 600;
-
-    transition: var(--transition);
-
-}
-
-.secondary-btn:hover {
-
-    background: var(--primary);
+    box-shadow: 0 0 22px rgba(79, 184, 155, 0.28);
 
 }
 
@@ -234,6 +212,36 @@ section {
     border-color: var(--primary);
 
     box-shadow: var(--glow);
+
+}
+
+/* ===========================
+   Feature Stickers
+   =========================== */
+
+.reflex-card {
+
+    position: relative;
+
+    overflow: visible;
+
+}
+
+.feature-sticker {
+
+    position: absolute;
+
+    width: 120px;
+
+    height: auto;
+
+    top: -70px;
+
+    left: -25px;
+
+    z-index: 5;
+
+    pointer-events: none;
 
 }
 
