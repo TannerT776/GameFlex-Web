@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Leaderboards | GameFlex</title>
 
-    <meta name="description" content="See the top creators, trending Flexes, and rising stars on GameFlex.">
+    <meta
+        name="description"
+        content="See the top creators and rising stars on GameFlex."
+    >
 
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
@@ -24,7 +30,7 @@
     <nav class="navbar">
 
         <a href="index.html" class="logo" aria-label="GameFlex Home">
-    <img src="images/gameflex-logo.jpeg" alt="GameFlex">
+            <img src="images/gameflex-logo.jpeg" alt="GameFlex">
         </a>
 
         <ul class="nav-links">
@@ -52,7 +58,7 @@
         <h1>GameFlex Leaderboards</h1>
 
         <p>
-            Discover the creators and Flexes making the biggest impact across the GameFlex community.
+            Discover the creators making the biggest impact across the GameFlex community.
         </p>
 
     </section>
@@ -65,15 +71,25 @@
 
         <div class="podium-container">
 
-            <!-- Second Place -->
-
             <article class="podium-card second">
 
                 <div class="medal">🥈</div>
 
-                <h3>Coming Soon</h3>
+                <img
+                    id="second-image"
+                    class="leaderboard-profile"
+                    src="images/gameflex-logo.jpeg"
+                    alt="Second place creator"
+                >
 
-                <p class="views">1,920,000 Views</p>
+                <h3 id="second-name">Loading...</h3>
+
+                <p id="second-game"></p>
+
+                <p class="score">
+                    Score:
+                    <span id="second-score">0</span>
+                </p>
 
                 <div class="podium-block second-place">
                     <span>#2</span>
@@ -81,15 +97,25 @@
 
             </article>
 
-            <!-- First Place -->
-
             <article class="podium-card first">
 
                 <div class="medal">🥇</div>
 
-                <h3>Coming Soon</h3>
+                <img
+                    id="first-image"
+                    class="leaderboard-profile"
+                    src="images/gameflex-logo.jpeg"
+                    alt="First place creator"
+                >
 
-                <p class="views">2,540,000 Views</p>
+                <h3 id="first-name">Loading...</h3>
+
+                <p id="first-game"></p>
+
+                <p class="score">
+                    Score:
+                    <span id="first-score">0</span>
+                </p>
 
                 <div class="podium-block first-place">
                     <span>#1</span>
@@ -97,15 +123,25 @@
 
             </article>
 
-            <!-- Third Place -->
-
             <article class="podium-card third">
 
                 <div class="medal">🥉</div>
 
-                <h3>Coming Soon</h3>
+                <img
+                    id="third-image"
+                    class="leaderboard-profile"
+                    src="images/gameflex-logo.jpeg"
+                    alt="Third place creator"
+                >
 
-                <p class="views">1,610,000 Views</p>
+                <h3 id="third-name">Loading...</h3>
+
+                <p id="third-game"></p>
+
+                <p class="score">
+                    Score:
+                    <span id="third-score">0</span>
+                </p>
 
                 <div class="podium-block third-place">
                     <span>#3</span>
@@ -117,74 +153,28 @@
 
     </section>
 
-    <!-- Top 100 -->
+    <!-- Full Leaderboard -->
 
     <section class="leaderboard-table">
 
-        <h2>Top 100 Creators</h2>
+        <h2>Creator Rankings</h2>
 
         <table>
 
             <thead>
-
                 <tr>
                     <th>Rank</th>
+                    <th>Profile</th>
                     <th>Creator</th>
-                    <th>Views</th>
-                    <th>Likes</th>
+                    <th>Game</th>
+                    <th>Score</th>
                 </tr>
-
             </thead>
 
-            <tbody>
+            <tbody id="leaderboard-body">
 
                 <tr>
-                    <td>#4</td>
-                    <td>Coming Soon</td>
-                    <td>1,248,000</td>
-                    <td>86,000</td>
-                </tr>
-
-                <tr>
-                    <td>#5</td>
-                    <td>Coming Soon</td>
-                    <td>1,190,000</td>
-                    <td>82,000</td>
-                </tr>
-
-                <tr>
-                    <td>#6</td>
-                    <td>Coming Soon</td>
-                    <td>1,105,000</td>
-                    <td>79,000</td>
-                </tr>
-
-                <tr>
-                    <td>#7</td>
-                    <td>Coming Soon</td>
-                    <td>985,000</td>
-                    <td>71,000</td>
-                </tr>
-
-                <tr>
-                    <td>#8</td>
-                    <td>Coming Soon</td>
-                    <td>941,000</td>
-                    <td>69,000</td>
-                </tr>
-
-                <tr>
-                    <td>#9</td>
-                    <td>Coming Soon</td>
-                    <td>905,000</td>
-                    <td>65,000</td>
-                </tr>
-
-                <tr>
-                    <td>#10</td>
-                    <td>Coming Soon</td>
-                    <td>872,000</td>
-                    <td>63,000</td>
+                    <td colspan="5">Loading leaderboard...</td>
                 </tr>
 
             </tbody>
@@ -244,43 +234,31 @@
         <div class="card-container">
 
             <article class="card">
-
-                <h3>🏆 Most Viewed</h3>
-
+                <h3>🏆 Highest Score</h3>
                 <p>
-                    Recognizing creators with the highest total view count.
+                    Recognizing creators with the highest leaderboard scores.
                 </p>
-
             </article>
 
             <article class="card">
-
-                <h3>❤️ Most Liked</h3>
-
+                <h3>🎮 Featured Game</h3>
                 <p>
-                    Celebrating the Flexes that earned the most community support.
+                    Spotlighting creators competing across popular gaming channels.
                 </p>
-
             </article>
 
             <article class="card">
-
                 <h3>📈 Fastest Growing</h3>
-
                 <p>
                     Spotlighting creators experiencing exceptional growth.
                 </p>
-
             </article>
 
             <article class="card">
-
                 <h3>⭐ Creator of the Week</h3>
-
                 <p>
                     A weekly spotlight recognizing outstanding creativity and community engagement.
                 </p>
-
             </article>
 
         </div>
@@ -303,7 +281,186 @@
 
 </footer>
 
-<script src="js/main.js"></script>
+<script type="module">
+
+    import { initializeApp }
+        from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+
+    import {
+        getFirestore,
+        collection,
+        getDocs,
+        query,
+        orderBy
+    }
+        from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAsVJTqj6H_BznMiyvErrxnRMZHp0aHYg4",
+        authDomain: "gameflex-website.firebaseapp.com",
+        projectId: "gameflex-website",
+        storageBucket: "gameflex-website.firebasestorage.app",
+        messagingSenderId: "993822942797",
+        appId: "1:993822942797:web:5f689dcb7480c11b4f1e04",
+        measurementId: "G-SCH0P87XEC"
+    };
+
+    const app = initializeApp(firebaseConfig);
+
+    const db = getFirestore(app);
+
+    const leaderboardBody =
+        document.getElementById("leaderboard-body");
+
+    async function loadLeaderboard() {
+
+        try {
+
+            const leaderboardQuery = query(
+                collection(db, "leaderboard"),
+                orderBy("score", "desc")
+            );
+
+            const snapshot =
+                await getDocs(leaderboardQuery);
+
+            const players = [];
+
+            snapshot.forEach((doc) => {
+
+                players.push({
+                    id: doc.id,
+                    ...doc.data()
+                });
+
+            });
+
+            displayLeaderboard(players);
+
+            displayPodium(players);
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Error loading leaderboard:",
+                error
+            );
+
+            leaderboardBody.innerHTML = `
+                <tr>
+                    <td colspan="5">
+                        Unable to load leaderboard.
+                    </td>
+                </tr>
+            `;
+
+        }
+
+    }
+
+    function displayLeaderboard(players) {
+
+        leaderboardBody.innerHTML = "";
+
+        players.forEach((player, index) => {
+
+            const row =
+                document.createElement("tr");
+
+            const image =
+                player.ProfileImage &&
+                player.ProfileImage.trim() !== ""
+                    ? player.ProfileImage
+                    : "images/gameflex-logo.jpeg";
+
+            row.innerHTML = `
+                <td>#${index + 1}</td>
+
+                <td>
+                    <img
+                        src="${image}"
+                        alt="${player.username}"
+                        class="leaderboard-profile"
+                    >
+                </td>
+
+                <td>${player.username}</td>
+
+                <td>${player.game}</td>
+
+                <td>${player.score}</td>
+            `;
+
+            leaderboardBody.appendChild(row);
+
+        });
+
+    }
+
+    function displayPodium(players) {
+
+        if (players.length > 0) {
+
+            updatePodiumPlayer(
+                "first",
+                players[0]
+            );
+
+        }
+
+        if (players.length > 1) {
+
+            updatePodiumPlayer(
+                "second",
+                players[1]
+            );
+
+        }
+
+        if (players.length > 2) {
+
+            updatePodiumPlayer(
+                "third",
+                players[2]
+            );
+
+        }
+
+    }
+
+    function updatePodiumPlayer(place, player) {
+
+        const image =
+            player.ProfileImage &&
+            player.ProfileImage.trim() !== ""
+                ? player.ProfileImage
+                : "images/gameflex-logo.jpeg";
+
+        document.getElementById(
+            `${place}-image`
+        ).src = image;
+
+        document.getElementById(
+            `${place}-name`
+        ).textContent = player.username;
+
+        document.getElementById(
+            `${place}-game`
+        ).textContent = player.game;
+
+        document.getElementById(
+            `${place}-score`
+        ).textContent = player.score;
+
+    }
+
+    loadLeaderboard();
+
+</script>
+
+<script src="main.js"></script>
 
 </body>
 </html>
