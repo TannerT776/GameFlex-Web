@@ -519,40 +519,8 @@ header {
 }
 
 /* ===========================
-   Footer
+   Leaderboard
    =========================== */
-
-footer {
-
-    margin-top: 80px;
-
-    padding: 60px 20px;
-
-    text-align: center;
-
-    border-top: 1px solid var(--border);
-
-    background: var(--background-dark);
-
-}
-
-footer h2 {
-
-    margin-bottom: 1rem;
-
-}
-
-footer span {
-
-    color: var(--primary);
-
-}
-
-footer p {
-
-    margin-top: .5rem;
-
-}
 
 .leaderboard-profile {
 
@@ -592,5 +560,41 @@ footer p {
 .leaderboard-table tbody tr:hover {
 
     background: var(--surface);
+
+}
+
+/* ===========================
+   Footer
+   =========================== */
+
+footer {
+
+    margin-top: 80px;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid var(--border);
+
+    background: var(--background-dark);
+
+}
+
+footer h2 {
+
+    margin-bottom: 1rem;
+
+}
+
+footer span {
+
+    color: var(--primary);
+
+}
+
+footer p {
+
+    margin-top: .5rem;
 
 }
