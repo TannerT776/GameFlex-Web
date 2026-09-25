@@ -657,90 +657,53 @@ header {
    =========================== */
 
 .feature-card {
-
     position: relative;
-
     min-height: 330px;
-
     overflow: hidden;
-
     display: flex;
-
     align-items: flex-end;
 
-    isolation: isolate;
-
     border: 1px solid rgba(255, 255, 255, 0.12);
-
     border-radius: var(--radius-lg);
-
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-
+    transition: var(--transition);
 }
 
-
-/* Game artwork */
-
 .feature-card::before {
-
     content: "";
-
     position: absolute;
-
     inset: 0;
 
     background-image: var(--feature-image);
-
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
 
-    z-index: -2;
-
-    transition: transform 0.5s ease;
-
+    z-index: 0;
 }
-
-
-/* Dark readability overlay */
 
 .feature-card::after {
-
     content: "";
-
     position: absolute;
-
     inset: 0;
 
-    z-index: -1;
+    background: linear-gradient(
+        to top,
+        rgba(12, 19, 22, 0.95) 0%,
+        rgba(12, 19, 22, 0.75) 50%,
+        rgba(12, 19, 22, 0.25) 100%
+    );
 
-    background:
-        linear-gradient(
-            to top,
-            rgba(12, 19, 22, 0.98) 0%,
-            rgba(12, 19, 22, 0.91) 28%,
-            rgba(12, 19, 22, 0.72) 55%,
-            rgba(12, 19, 22, 0.28) 100%
-        );
-
+    z-index: 1;
 }
 
-
-/* Feature Text */
-
 .feature-card-content {
+    position: relative;
+    z-index: 2;
 
     width: 100%;
-
     padding: 1.6rem;
-
 }
 
 .feature-card h2 {
