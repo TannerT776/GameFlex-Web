@@ -198,8 +198,6 @@ section {
     box-shadow: var(--glow);
 }
 
-<body class="home-page">
-
 .home-page {
     position: relative;
     background: var(--background-dark);
