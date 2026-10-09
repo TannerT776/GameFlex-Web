@@ -895,7 +895,52 @@ header {
             rgba(15, 22, 25, 0.42)
         );
 }
+/* ===========================
+   Creators Page Background
+   =========================== */
 
+.creators-page {
+    position: relative;
+    background: var(--background-dark);
+}
+
+.creators-page::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    z-index: -2;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 29, 33, 0.80),
+            rgba(20, 29, 33, 0.88)
+        ),
+        url("../images/creators.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.creators-page::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    z-index: -1;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(42, 51, 56, 0.08),
+            rgba(15, 22, 25, 0.40)
+        );
+}
 /* ===========================
    Footer
    =========================== */
